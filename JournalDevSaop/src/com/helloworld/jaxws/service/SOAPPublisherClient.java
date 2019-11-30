@@ -23,8 +23,15 @@ public class SOAPPublisherClient {
 		//We need to pass interface and model beans to client
 		PersonService ps = service.getPort(PersonService.class);
 		
-		Person p1 = new Person(); p1.setName("Pankaj"); p1.setId(1); p1.setAge(30);
-		Person p2 = new Person(); p2.setName("Meghna"); p2.setId(2); p2.setAge(25);
+		Person p1 = new Person(); 
+		p1.setName("Pankaj"); 
+		p1.setId(1); 
+		p1.setAge(30);
+		
+		Person p2 = new Person(); 
+		p2.setName("Meghna"); 
+		p2.setId(2); 
+		p2.setAge(25);
 		
 		//add person
 		System.out.println("Add Person Status="+ps.addPerson(p1));
